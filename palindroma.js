@@ -25,3 +25,4 @@ function playPalindroma(){
         alert(`la parola "${parola}" non è palindroma!`);
     }
 }
+playPalindroma();
