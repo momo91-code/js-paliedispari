@@ -1,7 +1,7 @@
 // imposto funzione per controllare parole palindrome o no
 function isPalindroma(parola) {
-// pulisco la parola da eventuali caratteri speciali   
-    let clean = parola.replace(/\s+/g,"").toLowerCase();
+// pulisco la parola da eventuali caratteri speciali e spazi 
+    let clean = parola.replace(/[^a-z0-9]/gi, "").toLowerCase();
 // inverto la parola
     let inverted = clean.split("").reverse().join("");
 // riporto true se la parola è uguale
